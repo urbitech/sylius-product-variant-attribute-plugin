@@ -41,12 +41,10 @@ final class ProductVariantTypeExtension extends AbstractTypeExtension
                 'allow_delete' => true,
                 'by_reference' => false,
                 'label'        => false,
-            ])
-        ;
-
+            ]);
     }
 
-    public function getExtendedTypes(): array
+    public static function getExtendedTypes(): array
     {
         return [ProductVariantType::class];
     }
